@@ -6,19 +6,6 @@
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="{{ public_path('assets/css/font_opensan.css') }}" rel="stylesheet">
 
- <style>
-  /* Globals */
-  footer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: var(--footer-height);
-   color: white;
-   font-weight: 700;
-   background-image: linear-gradient(70deg, yellow 0%, orange 25%, teal 25%, cyan 50%, red 50%, magenta 75%, black 75%, grey 100%);
-   /* background-image: linear-gradient(70deg, black 0%, cyan 100%); */
-  }
-
   <style type="text/css">
    ol {
     margin: 0;
@@ -210,9 +197,6 @@
    }
 
   </style>
-
-
- </style>
 </head>
 <body>
  <table>
