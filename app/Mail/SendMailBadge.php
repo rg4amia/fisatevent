@@ -1,0 +1,48 @@
+<?php
+
+namespace App\Mail;
+
+use App\Models\Participant;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+
+class SendMailBadge extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public $participant;
+
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct(Participant $participant)
+    {
+        $this->participant = $participant;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->from('t.amia@emploijeunes.ci')
+                    ->subject('INSCRIPTION POUR BADGE')
+                    ->markdown('emails.mailbadge')
+                    ->attachFromStorageDisk('badgepdf', $this->participant->telephone.'.pdf')
+                    ->with(
+                        [
+                            'nom'               =>  $this->participant->nom,
+                            'prenom'            =>  $this->participant->prenom,
+                            'fonction'          =>  $this->participant->fonction,
+                            'pays'              =>  $this->participant->pay->nom,
+                            'telephone'         =>  $this->participant->telephone
+                        ]
+                    );
+    }
+}
