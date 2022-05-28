@@ -167,7 +167,7 @@
 
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" name="forumdiscussion" type="checkbox" value="1" id="forumdiscussion" checked>
+                                                    <input class="form-check-input" name="forumdiscussion" type="checkbox" value=1" id="forumdiscussion">
                                                     <label class="form-check-label" for="forumdiscussion">
                                                         Forum de discussion
                                                     </label>
@@ -176,7 +176,7 @@
 
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" name="rencontrebtob" type="checkbox" value="1" id="rencontrebtob" checked>
+                                                    <input class="form-check-input" name="rencontrebtob" type="checkbox" value="1" id="rencontrebtob">
                                                     <label class="form-check-label" for="rencontrebtob">
                                                         Rencontre B to B
                                                     </label>
@@ -185,7 +185,7 @@
 
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" name="reunionministerielle" type="checkbox" value="1" id="reunionministerielle" checked>
+                                                    <input class="form-check-input" name="reunionministerielle" type="checkbox" value="1" id="reunionministerielle">
                                                     <label class="form-check-label" for="reunionministerielle">
                                                         Reunion ministerielle
                                                     </label>
@@ -194,7 +194,7 @@
 
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" name="sessionspecialeprojet" type="checkbox" value="1" id="sessionspecialeprojet" checked>
+                                                    <input class="form-check-input" name="sessionspecialeprojet" type="checkbox" value="1" id="sessionspecialeprojet">
                                                     <label class="form-check-label" for="sessionspecialeprojet">
                                                         Session speciale sur le financement de projets
                                                     </label>
@@ -203,7 +203,7 @@
 
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" name="rendezvous" type="checkbox" value="1" id="rendezvous" checked>
+                                                    <input class="form-check-input" name="rendezvous" type="checkbox" value="1" id="rendezvous">
                                                     <label class="form-check-label" for="rendezvous">
                                                         Le rendez-vous de l'inovation
                                                     </label>
