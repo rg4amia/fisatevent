@@ -270,6 +270,23 @@
   </tbody>
  </table>
 
+ <table>
+     <tbody>
+     <tr>
+         <td>
+             <p>
+                 <img alt="" src="{{ public_path('assets/images/logo_afrika_transtour.png') }}" style="height: 150px" />
+             </p>
+         </td>
+         <td>
+             <p>
+                 <img alt="" src="{{ public_path('assets/images/ministeredestransports.png') }}" style="height: 150px" />
+             </p>
+         </td>
+     </tr>
+     </tbody>
+ </table>
+
   <p style="margin-top:24px">
       <img alt="" src="{{ public_path('assets/images/bar_colorer.png') }}" style="height: 20%" />
   </p>

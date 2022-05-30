@@ -1,8 +1,8 @@
 @component('mail::message')
 # BONJOUR {{ $nom .' '. $prenom }},
 
-Rencontre prevu avec {{ $nom }} demain
-
+Monsieur {{ $prenom}},
+Nous venons de vous envoyer votre badge de participation forum.
 
 @component('mail::button', ['url' => ''])
 Retour au site

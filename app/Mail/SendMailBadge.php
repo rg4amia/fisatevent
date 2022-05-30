@@ -31,7 +31,7 @@ class SendMailBadge extends Mailable
      */
     public function build()
     {
-        return $this->from('t.amia@emploijeunes.ci')
+        return $this->from('r4gamia@gmail.com')
                     ->subject('INSCRIPTION POUR BADGE')
                     ->markdown('emails.mailbadge')
                     ->attachFromStorageDisk('badgepdf', $this->participant->telephone.'.pdf')
