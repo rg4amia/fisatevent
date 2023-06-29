@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccueilController;
+use App\Http\Controllers\Fontend\IndexFontEndController;
 use App\Http\Controllers\InscriptionController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/',[IndexFontEndController::class,'index'])->name('fontend.index');
+
+/* Route::get('/', function () {
     $pays = \App\Models\Pays::orderBy('nom','asc')->get();
     $secteuractivites = \App\Models\SecteurActivite::orderBy('libelle','asc')->get();
     return view('accueil',compact('pays','secteuractivites'));
-})->name('accueil');
+})->name('accueil'); */
 
 /*Route::post('/generate/badge', function (Request $request){
     dd($request->all());
