@@ -13,13 +13,13 @@
 
                     <!-- logo -->
                     <a data-scroll href="{{ route('fontend.index') }}#hero" class="header__logo">
-                        <img class="header__logo-white" src="img/logo.svg" alt="">
-                        <img class="header__logo-dark" src="img/logo--dark.svg" alt="">
+                        <img class="header__logo-white" src="{{ asset('assets_fontend/img/logofisat.png') }}" alt="">
+                        <img class="header__logo-dark" src="{{ asset('assets_fontend/img/logofisat.png') }}" alt="">
                     </a>
                     <!-- end logo -->
 
                     <!-- tagline -->
-                    <span class="header__tagline">Conference <br>Landing Page</span>
+                    <span class="header__tagline">Site Officiel <br>de la conférence</span>
                     <!-- end tagline -->
 
                     <!-- navigation -->
@@ -57,8 +57,11 @@
                     <!-- end navigation -->
 
                     <!-- sign in -->
-                    <a data-scroll href="{{ route('fontend.index') }}#registration" class="header__cta"><span>Buy ticket</span></a>
-                    <!-- end sign in -->
+                    <a data-scroll="" href="http://127.0.0.1:8000#registration" class="header__cta"
+                        style="background: linear-gradient(65deg, #c55d03 0%, #eb8326 100%);">
+                        <span>Réservation</span>
+                    </a>
+                     <!-- end sign in -->
                 </div>
             </div>
         </div>

@@ -30,15 +30,26 @@
             <div class="row row--grid">
                 <div class="col-12 col-lg-7">
                     <div class="hero__content hero__content--first">
-                        <h2 class="hero__title"><b>Big Business</b> <br>Conference</h2>
-                        <p class="hero__tagline">Global summit for those looking for ways to take their freedom back,
-                            mitigate geopoliticall risks, protect their wealth and build a location independent
-                            lifestyle</p>
-                        <div class="hero__btns">
-                            <a data-scroll href="index.html#registration" class="hero__btn"><span>Buy ticket</span></a>
+                        <h2 class="hero__title"><b>7ième Forum</b>
+                            <br>International et Salon
+                            <span style="color:#ec8426; font-size:46px"> Africain des Transports <span>
+                        </h2>
 
-                            <a data-scroll href="index.html#about" class="hero__btn hero__btn--white"><span>Lear
-                                    more</span></a>
+                        <p class="hero__tagline">
+                            <strong style="color:#ec8426">Theme: </strong><br>
+                            "Modernisation des écosystèmes logistiques, des transports et des Infrastructures: durabilité, sécurité, digitalisation
+                            et employabilité des jeunes.
+                            Quels défis et opportunités pour l'Afrique de demain?"
+                        </p>
+                        <div class="hero__btns">
+                            <a data-scroll href="index.html#registration" class="hero__btn" style="background: linear-gradient(65deg, #c55d03 0%, #eb8326 100%);">
+                                <span>Réservation</span>
+                            </a>
+                            <a data-scroll href="{{ route('fontend.index') }}#about" class="hero__btn hero__btn--white">
+                                <span>
+                                    Lear more
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -48,18 +59,17 @@
                         <div class="hero__dates" id="hero__dates">
                             <div class="hero__date hero__date--color" data-depth="0.25">
                                 <div class="hero__date-day">
-                                    07-08
-                                    <span>April</span>
+                                    22,23,24
+                                    <span>Novembre 2023</span>
                                 </div>
-                                <div class="hero__date-text">Conferences <br>& Workshops</div>
+                                <div class="hero__date-text">Conférences <br>& Ateliers</div>
                             </div>
 
                             <div class="hero__date hero__date--glass" data-depth="0.15">
-                                <div class="hero__date-day">
-                                    09
-                                    <span>April</span>
-                                </div>
-                                <div class="hero__date-text">Mentoring <br>and Q&A's</div>
+                                {{-- <div class="hero__date-day">
+                                 SOFITEL ABIDJAN HOTEL IVOIRE - CÔTE D'IVOIRE
+                                </div> --}}
+                                <div class="hero__date-text" style="border-top: 1px solid rgba(255,255,255,0.1);">SOFITEL ABIDJAN HOTEL IVOIRE - <br> CÔTE D'IVOIRE</div>
                             </div>
                         </div>
                     </div>
@@ -985,7 +995,7 @@
 
                         <div class="pass__counter">434 <span>/ 700</span></div>
 
-                        <a href="index.html#pass-modal" class="pass__btn open-modal"><span>Buy ticket</span></a>
+                        <a href="index.html#pass-modal" class="pass__btn open-modal" style="background: linear-gradient(65deg, #c55d03 0%, #eb8326 100%);"><span>Réservation</span></a>
                     </div>
                 </div>
                 <!-- end pass -->
@@ -1021,7 +1031,7 @@
 
                         <div class="pass__counter">365 <span>/ 500</span></div>
 
-                        <a href="index.html#pass-modal" class="pass__btn open-modal"><span>Buy ticket</span></a>
+                        <a href="index.html#pass-modal" class="pass__btn open-modal" style="background: linear-gradient(65deg, #c55d03 0%, #eb8326 100%);"><span>Réservation</span></a>
                     </div>
                 </div>
                 <!-- end pass -->
@@ -1057,7 +1067,7 @@
 
                         <div class="pass__counter">137 <span>/ 250</span></div>
 
-                        <a href="index.html#pass-modal" class="pass__btn open-modal"><span>Buy ticket</span></a>
+                        <a href="{{ route('fontend.index') }}#pass-modal" style="background: linear-gradient(65deg, #c55d03 0%, #eb8326 100%);" class="pass__btn open-modal"><span>Réservation</span></a>
                     </div>
                 </div>
                 <!-- end pass -->
