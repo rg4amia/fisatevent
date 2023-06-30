@@ -47,7 +47,7 @@
                             </a>
                             <a data-scroll href="{{ route('fontend.index') }}#about" class="hero__btn hero__btn--white">
                                 <span>
-                                    Lear more
+                                   En savoir plus
                                 </span>
                             </a>
                         </div>
@@ -88,26 +88,66 @@
                     <div class="about">
                         <div class="row">
                             <div class="col-12 col-lg-6">
-                                <div class="about__cover">
-                                    <img src="img/about/cover.jpg" alt="">
-                                    <a href="https://vimeo.com/45830194" class="open-video">
+                                <div class="about__cover" style="margin-bottom: 36px">
+                                    <img src="{{ asset('assets_fontend/img/fisat/image-fisat-1.jpg') }}" alt="">
+                                    {{-- <a href="https://vimeo.com/45830194" class="open-video">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path
                                                 d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z" />
                                         </svg>
-                                    </a>
+                                    </a> --}}
                                 </div>
+                                <p>
+                                    <span class="first-letter">D</span>epuis 2009, Le Salon Africain des Transports et des Infrastructures Économiques,
+                                         réunit tous les professionnels et décideurs pour des échanges riches et uniques 
+                                         sur les transports, les infrastructures et leurs secteurs connexes.
+                                </p>
+                                <p>
+                                        Après Rabat en 2015, et Abidjan en 2017, avec
+                                        une grande mobilisation des acteurs venant de
+                                        toute l’Afrique, le Salon a connu une phase de ralen-
+                                        tissement due d’une part à la densité de l’agenda
+                                        national ivoirien et d’autre part, aux restrictions liées
+                                        à la gestion de la pandémie du Coronavirus. En 2022,
+                                        année de reprise,  l’événement s’est réinventé et est
+                                        devenu le <strong>Forum International et Salon Africain
+                                        des Transports (FISAT)</strong>. 
+                                </p>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <div class="about__content">
-                                    <h2>About Conference</h2>
-                                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                                        generators on the Internet tend to repeat predefined chunks as necessary, making
-                                        this the first true generator on the Internet.</p>
-                                    <p>It uses a dictionary of over 200 Latin words, combined with a handful of model
-                                        sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                    <h2>À propos de la conférence</h2>
+                                    <p>
+                                        Il a focalisé, plus que jamais,
+                                        toute l'attention des décideurs et des professionnels
+                                        sur des sujets d’une brulante actualité au niveau na-
+                                        tional et international. Ainsi, le pari de l’organisation et de la crédibilité
+                                        scientifique ont été tenus. 
+                                    </p>
+                                    
+                                     <p>
+                                        Ainsi, en 2022, le FISAT a tenu toutes ses promesses,
+                                        notamment en réussissant à repositionner le trans-
+                                        port, la logistique et les infrastructures au cœur du
+                                        processus de développement amorcé pour atteindre
+                                        l’émergence de nos états, et malheureusement freiné
+                                        par la récente crise. Cela s’est traduit par des débats
+                                        animés par des experts de premier plan avec la parti-
+                                        cipation d’institutions nationales et internationales 
+                                     </p>
+                                     <p>
+                                        Le FISAT est un espace d’exposition, d’échanges et de
+                                        Promotion par excellence, destiné, aux professionnels
+                                        du transport, de la logistique et des infrastructures, à
+                                        tous ceux qui évoluent dans les secteurs connexes et
+                                        Le FISAT est donc la plateforme par excellence de
+                                        valorisation et de promotion des Transports, de la
+                                        logistique et des infrastructures économiques.
+                                        C’est un grand carrefour de rencontres, d’échanges
+                                        et de partage des professionnels des secteurs du
+                                        transport, de la logistique et des secteurs connexes.
+                                     </p>
                                 </div>
                             </div>
 
@@ -118,23 +158,16 @@
                                         <div class="col-12 col-sm-6 col-xl-3">
                                             <div class="statistics__item">
                                                 <div class="statistics__icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M19.79,7.13A1,1,0,0,0,19,6.75H8v-.5A2,2,0,0,1,9.46,4.33a1.5,1.5,0,0,0,1,.42h1a1.5,1.5,0,0,0,0-3h-1a1.49,1.49,0,0,0-1.17.57A4,4,0,0,0,6,6.25v.5H5a1,1,0,0,0-.79.38A1,1,0,0,0,4,8l.62,2.49A3,3,0,0,0,7.1,12.71l.78,7H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2h-.88l.78-7a3,3,0,0,0,2.45-2.23L20,8A1,1,0,0,0,19.79,7.13ZM14.1,19.75H9.9l-.78-7h5.76ZM17.41,10a1,1,0,0,1-1,.76H7.56a1,1,0,0,1-1-.76L6.28,8.75H17.72Z" />
-                                                    </svg>
+                                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                                                 </div>
-                                                <div class="statistics__number"><span>40</span><b>+</b></div>
-                                                <div class="statistics__text">Featured Speakers</div>
+                                                <div class="statistics__number"><span>10</span><b>+</b></div>
+                                                <div class="statistics__text">Pays participants</div>
                                             </div>
                                         </div>
 
                                         <div class="col-12 col-sm-6 col-xl-3">
                                             <div class="statistics__item">
                                                 <div class="statistics__icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M21.49,10.19l-1-.55h0l-9-5-.11,0a1.06,1.06,0,0,0-.19-.06l-.19,0-.18,0a1.17,1.17,0,0,0-.2.06l-.11,0-9,5a1,1,0,0,0,0,1.74L4,12.76V17.5a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V12.76l2-1.12V14.5a1,1,0,0,0,2,0V11.06A1,1,0,0,0,21.49,10.19ZM16,17.5a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V13.87l4.51,2.5.15.06.09,0a1,1,0,0,0,.25,0h0a1,1,0,0,0,.25,0l.09,0a.47.47,0,0,0,.15-.06L16,13.87Zm-5-3.14L4.06,10.5,11,6.64l6.94,3.86Z" />
-                                                    </svg>
                                                 </div>
                                                 <div class="statistics__number"><span>2.500</span><b>+</b></div>
                                                 <div class="statistics__text">2021 Attendees</div>
@@ -186,7 +219,7 @@
                 <!-- section title -->
                 <div class="col-12 col-xl-6 offset-xl-3">
                     <div class="section__title section__title--border">
-                        <h2>Meet Our Speakers</h2>
+                        <h2>Rencontrez nos conférenciers</h2>
                     </div>
                 </div>
                 <!-- end section title -->
@@ -197,7 +230,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/1.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/1.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -238,7 +271,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/2.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/2.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -273,7 +306,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/3.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/3.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -308,7 +341,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/4.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/4.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -349,7 +382,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/5.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/5.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -384,7 +417,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/6.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/6.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -425,7 +458,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/7.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/7.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -460,7 +493,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
                     <div class="speaker">
                         <div class="speaker__img">
-                            <img src="img/speakers/8.jpg" alt="">
+                            <img src="{{ asset('assets_fontend/img/speakers/8.jpg') }}" alt="">
 
                             <div class="speaker__social">
                                 <a href="index.html#">
@@ -556,7 +589,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/7.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/7.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Felix Autumn</p>
@@ -583,7 +616,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/3.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/3.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Kathie Corl</p>
@@ -610,7 +643,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/1.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/1.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Otto Bree</p>
@@ -637,7 +670,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/6.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/6.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Sophie Moore</p>
@@ -668,7 +701,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/2.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/2.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Eliza Josceline</p>
@@ -695,7 +728,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/4.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/4.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Georgiana Patti</p>
@@ -722,7 +755,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/5.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/5.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Joni Celeste</p>
@@ -753,7 +786,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/8.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/8.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Cong Duong</p>
@@ -780,7 +813,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/1.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/1.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Otto Bree</p>
@@ -807,7 +840,7 @@
                                             <div class="program__speech">
                                                 <div class="program__speaker">
                                                     <div class="program__speaker-img">
-                                                        <img src="img/speakers/5.jpg" alt="">
+                                                        <img src="{{ asset('assets_fontend/img/speakers/5.jpg') }}" alt="">
                                                     </div>
                                                     <div class="program__speaker-about">
                                                         <p>Joni Celeste</p>
@@ -863,32 +896,32 @@
                     <div class="gallery">
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--1">
-                            <a href="img/gallery/1.jpg" title="Some Image Title 1">
-                                <img src="img/gallery/1.jpg" alt="Some Image Title 1" />
+                            <a href="{{ asset('assets_fontend/img/gallery/1.jpg') }}" title="Some Image Title 1">
+                                <img src="{{ asset('assets_fontend/img/gallery/1.jpg') }}" alt="Some Image Title 1" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--2">
-                            <a href="img/gallery/2.jpg" title="There may not be a Title">
-                                <img src="img/gallery/2.jpg" alt="There may not be a Title" />
+                            <a href="{{ asset('assets_fontend/img/gallery/2.jpg') }}" title="There may not be a Title">
+                                <img src="{{ asset('assets_fontend/img/gallery/2.jpg') }}" alt="There may not be a Title" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--3">
-                            <a href="img/gallery/3.jpg" title="Some Image Title 3">
-                                <img src="img/gallery/3.jpg" alt="Some Image Title 3" />
+                            <a href="{{ asset('assets_fontend/img/gallery/3.jpg') }}" title="Some Image Title 3">
+                                <img src="{{ asset('assets_fontend/img/gallery/3.jpg') }}" alt="Some Image Title 3" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--4">
-                            <a href="img/gallery/4.jpg" title="Some Image Title 4">
-                                <img src="img/gallery/4.jpg" alt="Some Image Title 4" />
+                            <a href="{{ asset('assets_fontend/img/gallery/4.jpg') }}" title="Some Image Title 4">
+                                <img src="{{ asset('assets_fontend/img/gallery/4.jpg') }}" alt="Some Image Title 4" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
@@ -901,32 +934,32 @@
                     <div class="gallery">
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--5">
-                            <a href="img/gallery/5.jpg" title="Some Image Title 5">
-                                <img src="img/gallery/5.jpg" alt="Some Image Title 5" />
+                            <a href="{{ asset('assets_fontend/img/gallery/5.jpg') }}" title="Some Image Title 5">
+                                <img src="{{ asset('assets_fontend/img/gallery/5.jpg') }}" alt="Some Image Title 5" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--6">
-                            <a href="img/gallery/6.jpg" title="Some Image Title 6">
-                                <img src="img/gallery/6.jpg" alt="Some Image Title 6" />
+                            <a href="{{ asset('assets_fontend/img/gallery/6.jpg') }}" title="Some Image Title 6">
+                                <img src="{{ asset('assets_fontend/img/gallery/6.jpg') }}" alt="Some Image Title 6" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--7">
-                            <a href="img/gallery/7.jpg" title="Some Image Title 7">
-                                <img src="img/gallery/7.jpg" alt="Some Image Title 7" />
+                            <a href="{{ asset('assets_fontend/img/gallery/7.jpg') }}" title="Some Image Title 7">
+                                <img src="{{ asset('assets_fontend/img/gallery/7.jpg') }}" alt="Some Image Title 7" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--8">
-                            <a href="img/gallery/8.jpg" title="Some Image Title 8">
-                                <img src="img/gallery/8.jpg" alt="Some Image Title 8" />
+                            <a href="{{ asset('assets_fontend/img/gallery/8.jpg') }}" title="Some Image Title 8">
+                                <img src="{{ asset('assets_fontend/img/gallery/8.jpg') }}" alt="Some Image Title 8" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
@@ -1096,62 +1129,62 @@
                     <ul class="sponsors">
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/3docean-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/3docean-center.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/videohive-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/videohive-center.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/audiojungle-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/audiojungle-center.png')}}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/codecanyon-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/codecanyon-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/photodune-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/photodune-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/themeforest-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/themeforest-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/graphicriver-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/graphicriver-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/videohive-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/videohive-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/audiojungle-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/audiojungle-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/codecanyon-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/codecanyon-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/photodune-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/photodune-center.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="index.html#">
-                                <img src="img/sponsors/themeforest-center.png" alt="">
+                                <img src="{{ asset('assets_fontend/img/sponsors/themeforest-center.png') }}" alt="">
                             </a>
                         </li>
                     </ul>
@@ -1608,7 +1641,7 @@
                 of letters, as opposed to using 'Content here, content here', making it look like readable English.
             </p>
 
-            <img src="img/about/modal.jpg" alt="">
+            <img src="{{ asset('assets_fontend/img/about/modal.jpg') }}" alt="">
 
             <p>
                 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
