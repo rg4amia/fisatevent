@@ -42,13 +42,13 @@
                             <a data-scroll href="{{ route('fontend.index') }}#">Accueil</a>
                         </li>
                         <li>
-                            <a data-scroll href="{{ route('fontend.index') }}#speakers">Speakers</a>
+                            <a data-scroll href="{{ route('fontend.index') }}#speakers">Panélistes</a>
                         </li>
                         <li>
                             <a data-scroll href="{{ route('fontend.index') }}#agenda">Agenda</a>
                         </li>
                         <li>
-                            <a data-scroll href="{{ route('fontend.index') }}#registration">Registration</a>
+                            <a data-scroll href="{{ route('fontend.index') }}#registration">Inscription</a>
                         </li>
                         <li>
                             <a data-scroll href="{{ route('fontend.index') }}#contacts">Contacts</a>
