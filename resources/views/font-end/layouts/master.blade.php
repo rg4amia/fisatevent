@@ -90,12 +90,13 @@
                             <div class="col-12 col-lg-6">
                                 <div class="about__cover" style="margin-bottom: 36px">
                                     <img src="{{ asset('assets_fontend/img/fisat/image-fisat-1.jpg') }}" alt="">
-                                    {{-- <a href="https://vimeo.com/45830194" class="open-video">
+                                   {{--  <a href="https://vimeo.com/45830194" class="open-video"> --}}
+                                    <a href="https://www.youtube.com/watch?v=JzPfMbG1vrE" class="open-video">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path
                                                 d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z" />
                                         </svg>
-                                    </a> --}}
+                                    </a> 
                                 </div>
                                 <p>
                                     <span class="first-letter">D</span>epuis 2009, Le Salon Africain des Transports et des Infrastructures Économiques,
@@ -168,22 +169,20 @@
                                         <div class="col-12 col-sm-6 col-xl-3">
                                             <div class="statistics__item">
                                                 <div class="statistics__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
                                                 </div>
-                                                <div class="statistics__number"><span>2.500</span><b>+</b></div>
-                                                <div class="statistics__text">2021 Attendees</div>
+                                                <div class="statistics__number"><span>50</span><b>+</b></div>
+                                                <div class="statistics__text">50 exposants</div>
                                             </div>
                                         </div>
 
                                         <div class="col-12 col-sm-6 col-xl-3">
                                             <div class="statistics__item">
                                                 <div class="statistics__icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                        <path
-                                                            d="M21,14H20V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3V14H3a1,1,0,0,0,0,2h8v1.15l-4.55,3A1,1,0,0,0,7,22a.94.94,0,0,0,.55-.17L11,19.55V21a1,1,0,0,0,2,0V19.55l3.45,2.28A.94.94,0,0,0,17,22a1,1,0,0,0,.55-1.83l-4.55-3V16h8a1,1,0,0,0,0-2Zm-3,0H6V4H18ZM9,12a1,1,0,0,0,.83-.45l1.33-2,1.13,1.14a1,1,0,0,0,.81.29,1,1,0,0,0,.73-.45l2-3a1,1,0,0,0-1.66-1.1l-1.33,2L11.71,7.29A1,1,0,0,0,10.9,7a1,1,0,0,0-.73.45l-2,3a1,1,0,0,0,.28,1.38A.94.94,0,0,0,9,12Z" />
-                                                    </svg>
+                                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                                                 </div>
-                                                <div class="statistics__number"><span>36</span><b>+</b></div>
-                                                <div class="statistics__text">Hours of Lectures</div>
+                                                <div class="statistics__number"><span>5000</span><b>+</b></div>
+                                                <div class="statistics__text">Visiteurs</div>
                                             </div>
                                         </div>
 
@@ -196,7 +195,7 @@
                                                     </svg>
                                                 </div>
                                                 <div class="statistics__number"><span>30</span><b>+</b></div>
-                                                <div class="statistics__text">Sponsors</div>
+                                                <div class="statistics__text">Sponsores</div>
                                             </div>
                                         </div>
                                     </div>
@@ -544,7 +543,7 @@
                             <!-- title -->
                             <div class="col-12 col-lg-6">
                                 <div class="section__title section__title--white section__title--left">
-                                    <h2>Conference Program</h2>
+                                    <h2>Programme de la conférence</h2>
                                 </div>
                             </div>
                             <!-- end title -->
@@ -555,24 +554,24 @@
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link active" id="1-tab" data-toggle="tab" href="index.html#tab-1"
                                             role="tab" aria-controls="tab-1" aria-selected="true">
-                                            First Day
-                                            <span>April 7, 2022</span>
+                                            Jour 1
+                                            <span>22 Novembre, 2023</span>
                                         </a>
                                     </li>
 
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="2-tab" data-toggle="tab" href="index.html#tab-2"
                                             role="tab" aria-controls="tab-2" aria-selected="false">
-                                            Second Day
-                                            <span>April 8, 2022</span>
+                                            Jour 2
+                                            <span>23 Novembre, 2023</span>
                                         </a>
                                     </li>
 
                                     <li class="nav-item" role="presentation">
                                         <a class="nav-link" id="3-tab" data-toggle="tab" href="index.html#tab-3"
                                             role="tab" aria-controls="tab-3" aria-selected="false">
-                                            Third Day
-                                            <span>April 9, 2022</span>
+                                             Jour 3
+                                            <span>24 Novembre, 2023</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -597,7 +596,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="program__agenda">
-                                                    <h3>Conference Opening</h3>
+                                                    <h3>Ouverture de la conférence</h3>
                                                     <span>9:00 am - 10:30 am</span>
                                                     <p>Many desktop publishing packages and web page editors now use
                                                         Lorem Ipsum as their default model text, and a search for 'lorem
@@ -624,7 +623,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="program__agenda">
-                                                    <h3>Intro to Business</h3>
+                                                    <h3>Introduction aux affaires</h3>
                                                     <span>11:00 am - 12:30 pm</span>
                                                     <p>Many desktop publishing packages and web page editors now use
                                                         Lorem Ipsum as their default model text, and a search for 'lorem
@@ -651,7 +650,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="program__agenda">
-                                                    <h3>Business Trends for 2022</h3>
+                                                    <h3>Tendances commerciales pour 2022</h3>
                                                     <span>13:00 pm - 14:30 pm</span>
                                                     <p>Many desktop publishing packages and web page editors now use
                                                         Lorem Ipsum as their default model text, and a search for 'lorem
@@ -882,7 +881,7 @@
                 <!-- section title -->
                 <div class="col-12 col-xl-6 offset-xl-3">
                     <div class="section__title section__title--border">
-                        <h2>Photo Gallery</h2>
+                        <h2>Galerie de photos</h2>
                     </div>
                 </div>
                 <!-- end section title -->
@@ -896,32 +895,32 @@
                     <div class="gallery">
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--1">
-                            <a href="{{ asset('assets_fontend/img/gallery/1.jpg') }}" title="Some Image Title 1">
-                                <img src="{{ asset('assets_fontend/img/gallery/1.jpg') }}" alt="Some Image Title 1" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-1.jpg') }}" title="Some Image Title 1">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-1.jpg') }}" alt="Some Image Title 1" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--2">
-                            <a href="{{ asset('assets_fontend/img/gallery/2.jpg') }}" title="There may not be a Title">
-                                <img src="{{ asset('assets_fontend/img/gallery/2.jpg') }}" alt="There may not be a Title" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-2.jpg') }}" title="There may not be a Title">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-2.jpg') }}" alt="There may not be a Title" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--3">
-                            <a href="{{ asset('assets_fontend/img/gallery/3.jpg') }}" title="Some Image Title 3">
-                                <img src="{{ asset('assets_fontend/img/gallery/3.jpg') }}" alt="Some Image Title 3" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-3.jpg') }}" title="Some Image Title 3">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-3.jpg') }}" alt="Some Image Title 3" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--4">
-                            <a href="{{ asset('assets_fontend/img/gallery/4.jpg') }}" title="Some Image Title 4">
-                                <img src="{{ asset('assets_fontend/img/gallery/4.jpg') }}" alt="Some Image Title 4" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-4.jpg') }}" title="Some Image Title 4">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-4.jpg') }}" alt="Some Image Title 4" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
@@ -934,32 +933,32 @@
                     <div class="gallery">
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--5">
-                            <a href="{{ asset('assets_fontend/img/gallery/5.jpg') }}" title="Some Image Title 5">
-                                <img src="{{ asset('assets_fontend/img/gallery/5.jpg') }}" alt="Some Image Title 5" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-5.jpg') }}" title="Some Image Title 5">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-5.jpg') }}" alt="Some Image Title 5" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--6">
-                            <a href="{{ asset('assets_fontend/img/gallery/6.jpg') }}" title="Some Image Title 6">
-                                <img src="{{ asset('assets_fontend/img/gallery/6.jpg') }}" alt="Some Image Title 6" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-6.jpg') }}" title="Some Image Title 6">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-6.jpg') }}" alt="Some Image Title 6" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--7">
-                            <a href="{{ asset('assets_fontend/img/gallery/7.jpg') }}" title="Some Image Title 7">
-                                <img src="{{ asset('assets_fontend/img/gallery/7.jpg') }}" alt="Some Image Title 7" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-7.jpg') }}" title="Some Image Title 7">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-7.jpg') }}" alt="Some Image Title 7" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
 
                         <!-- gallery item -->
                         <figure class="gallery__item gallery__item--8">
-                            <a href="{{ asset('assets_fontend/img/gallery/8.jpg') }}" title="Some Image Title 8">
-                                <img src="{{ asset('assets_fontend/img/gallery/8.jpg') }}" alt="Some Image Title 8" />
+                            <a href="{{ asset('assets_fontend/img/fisat/image-9.jpg') }}" title="Some Image Title 8">
+                                <img src="{{ asset('assets_fontend/img/fisat/image-9.jpg') }}" alt="Some Image Title 8" />
                             </a>
                         </figure>
                         <!-- end gallery item -->
@@ -973,8 +972,11 @@
             <div class="row">
                 <div class="col-12">
                     <button class="section__btn section__btn--more" type="button" data-toggle="collapse"
-                        data-target="#collapsemore" aria-expanded="false" aria-controls="collapsemore"><span>Show
-                            more</span></button>
+                        data-target="#collapsemore" aria-expanded="false" aria-controls="collapsemore">
+                        <span>
+                            Voir plus
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -988,9 +990,8 @@
                 <!-- section title -->
                 <div class="col-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
                     <div class="section__title section__title--border">
-                        <h2>Registration</h2>
-                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                            as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        <h2>Inscription</h2>
+                        <p>Choisissez un pack qui correspond a vos besoin et inscrivez-vous !!!</p>
                     </div>
                 </div>
                 <!-- end section title -->

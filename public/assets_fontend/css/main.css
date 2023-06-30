@@ -609,8 +609,14 @@ ul {
   position: relative;
   width: 100%;
   padding: 140px 0 60px;
-  background: url("../img/hero/hero.jpg") no-repeat center/cover;
+  background: url("../img/fisat/hero.png") no-repeat center/cover;
 }
+/* .hero {
+  position: relative;
+  width: 100%;
+  padding: 140px 0 60px;
+  background: url("../img/hero/hero.jpg") no-repeat center/cover;
+} */
 .hero__content {
   display: flex;
   flex-direction: column;
