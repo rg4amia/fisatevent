@@ -23,6 +23,12 @@ Route::group(['prefix' => 'inscription','as' => 'inscription.'],function(){
 
     Route::post('/generate/badge', [InscriptionController::class, 'storeParticipant'])->name('generate.badge');
     Route::post('/generate/badge/entreprise', [InscriptionController::class, 'storeEntreprise'])->name('generate.badge.entreprise');
+
+    Route::get('/success/page', [InscriptionController::class, 'success'])->name('generate.success.badge');
+    Route::get('/generate/imprimer/badge/{participant}', [InscriptionController::class, 'imprimerBadge'])->name('generate.imprimer.badge');
+    Route::get('/generate/imprimer/badge/entreprise', [InscriptionController::class, 'imprimerBadgeEntreprise'])->name('generate.imprimer.badge.entreprise');
+    Route::get('/send-email/badge', [InscriptionController::class, 'emailbadge'])->name('send-email.badge');
+    Route::get('/send-email/badge/entreprise', [InscriptionController::class, 'emailbadgeEntreprise'])->name('send-email.badge.entreprise');
 });
 
 /* Route::get('/', function () {

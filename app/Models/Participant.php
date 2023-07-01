@@ -13,6 +13,14 @@ class Participant extends Model
         'nom',
         'prenom',
         'fonction',
+        'telephone',
+        'email'
+    ];
+
+   /*  protected $fillable = [
+        'nom',
+        'prenom',
+        'fonction',
         'nomdirigeantfonction',
         'secteuractivite_id',
         'pay_id',
@@ -28,7 +36,7 @@ class Participant extends Model
         'reunionministerielle',
         'sessionspecialeprojet',
         'rendezvous',
-    ];
+    ]; */
 
     public function pay(){
         return $this->belongsTo(Pays::class);

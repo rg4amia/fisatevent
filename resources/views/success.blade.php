@@ -24,10 +24,10 @@
                     @include('layouts.inc.flash')
                     <div class="row">
                         <div class="col-lg-6">
-                            <a target="_blank" href="{{ route('generate.imprimer.badge') }}" class="btn btn-danger">IMPRIMER VOTRE BADGE</a>
+                            <a target="_blank" href="{{ route('inscription.generate.imprimer.badge') }}" class="btn btn-danger">IMPRIMER VOTRE BADGE</a>
                         </div>
                         <div class="col-lg-6">
-                            <a target="_blank" href="{{ route('send-email.badge') }}" class="btn btn-danger">RECEVOIR VOTRE BADGE PAR MAIL</a>
+                            <a target="_blank" href="{{ route('inscription.send-email.badge') }}" class="btn btn-danger">RECEVOIR VOTRE BADGE PAR MAIL</a>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,8 @@ use App\Mail\SendMailBadge;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Mail;
 use PDF;
+use Endroid\QrCode\QrCode;
+use Endroid\QrCode\Writer\PngWriter;
 
 class InscriptionController extends Controller
 {
@@ -28,19 +30,42 @@ class InscriptionController extends Controller
     }
 
     public function storeParticipant(Request $request){
-
+       // dd($request->all());
         try {
-            $participant = Participant::create($request->all());
+
+            $participant = new Participant();
+            $participant->nom  = $request->nom;
+            $participant->prenom  = $request->prenoms;
+            $participant->fonction  = $request->fonction;
+            $participant->email  = $request->email;
+            $participant->telephone  = $request->telephone;
+            $participant->save();
 
             if($participant){
                 session()->put('participant',$participant);
+                $qr = QrCode::create("https://code-boxx.com");
+                $writer = new PngWriter();
+                $result = $writer->write($qr);
+
+                $qrcode = $result->getDataUri();
+
+                $pdf = PDF::loadView('imprimer.index', compact('participant', 'qrcode'))
+                ->setPaper('a5', 'Portrait')
+                ->setWarnings(false);
+
+                $content = $pdf->download()->getOriginalContent();
+                Storage::disk('badgepdf')->put('/' . $participant->nom . '_' . str_replace(' ', '_', $participant->prenom) . '.pdf', $content);
+
+                Mail::to($participant->email)->send(new SendMailBadge($participant));
+
                 $request->session()->flash(' ','VOTRE INSCRIPTION EST VALIDEE ! AFRIKA TRANSTOUR VOUS REMERCIE DE VOTRE INTERET. A BIENTOT AU FISAT 2022 !');
             }
         } catch (\Exception $e){
             $request->session()->flash('warning',$e->getMessage());
+            //return back();
         }
 
-        return redirect(route('generate.success.badge'));
+        return redirect(route('inscription.generate.success.badge'));
     }
 
     public function storeEntreprise(Request $request) {
@@ -67,7 +92,8 @@ class InscriptionController extends Controller
             return redirect(route('accueil'));
         } */
 
-        return view('success',compact('participant'));
+        return view('font-end.success',compact('participant'));
+       // return view('success',compact('participant'));
     }
 
      public function successEntreprise(){
@@ -91,14 +117,20 @@ class InscriptionController extends Controller
 
     public function imprimerBadge (Participant $participant)
     {
-        // L'instance PDF avec une vue : resources/views/imprimer/index.blade.php
-        $participant = session()->get('participant');
+        //dd($participant);
+        // (B) CREATE QR CODE
+        $qr = QrCode::create("https://code-boxx.com");
+        $writer = new PngWriter();
+        $result = $writer->write($qr);
 
-        $pdf = PDF::loadView('imprimer.index', compact('participant'))
+       $qrcode = $result->getDataUri();
+
+        $pdf = PDF::loadView('imprimer.index', compact('participant', 'qrcode'))
                     ->setPaper('a5', 'Portrait')
                     ->setWarnings(false);
+
         $content = $pdf->download()->getOriginalContent();
-        Storage::disk('badgepdf')->put('/'. $participant->telephone . '.pdf', $content);
+        Storage::disk('badgepdf')->put('/'. $participant->nom .'_'.$participant->prenom. '.pdf', $content);
 
         return $pdf->stream();
     }

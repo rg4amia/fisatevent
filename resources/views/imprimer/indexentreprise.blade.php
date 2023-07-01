@@ -202,7 +202,7 @@
 <table>
     <tbody>
     <tr>
-        <td><img alt="" src="{{ public_path('assets/images/forum_logo.png') }}" style="height: 150px" /></td>
+        <td><img alt="" src="{{ public_path('assets/images/forum_logo_7_edition.png') }}" style="height: 150px" /></td>
     </tr>
     </tbody>
 </table>

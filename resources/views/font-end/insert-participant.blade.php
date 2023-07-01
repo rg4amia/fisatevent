@@ -27,24 +27,24 @@
                     <div class="col-md-6">
                         <div class="form__group form__group--dark">
                             <label for="fullname" class="form__label">POSTE</label>
-                            <input id="fullname" type="text" name="poste" class="form__input" placeholder="saisir votre poste">
+                            <input id="fullname" type="text" name="fonction" class="form__input" placeholder="saisir votre poste">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form__group form__group--dark">
                             <label for="fullname" class="form__label">CONTACT</label>
-                            <input id="fullname" type="number" name="contact" class="form__input" placeholder="saisir votre contact">
+                            <input id="fullname" type="number" name="telephone" class="form__input" placeholder="saisir votre contact">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form__group form__group--dark">
                             <label for="fullname" class="form__label">MAIL</label>
-                            <input id="fullname" type="email" name="mail" class="form__input" placeholder="saisir votre mail">
+                            <input id="fullname" type="email" name="email" class="form__input" placeholder="saisir votre mail">
                         </div>
                     </div>
                 </div>
 
-                <button type="button" class="form__btn form__btn--center">
+                <button type="submit" class="form__btn form__btn--center">
                     <span>Soumettre</span>
                 </button>
             </form>
