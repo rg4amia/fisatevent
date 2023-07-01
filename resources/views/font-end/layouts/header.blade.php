@@ -57,9 +57,9 @@
                     <!-- end navigation -->
 
                     <!-- sign in -->
-                    <a data-scroll="" href="http://127.0.0.1:8000#registration" class="header__cta"
+                    <a data-scroll="" href="{{ route('inscription.participant') }}" class="header__cta"
                         style="background: linear-gradient(65deg, #c55d03 0%, #eb8326 100%);">
-                        <span>Réservation</span>
+                        <span>Inscription</span>
                     </a>
                      <!-- end sign in -->
                 </div>

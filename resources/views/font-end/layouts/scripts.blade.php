@@ -9,3 +9,4 @@
 <script src="{{ asset('assets_fontend/js/jquery.magnific-popup.min.js') }}"></script>
 <script src="{{ asset('assets_fontend/js/smooth-scroll.polyfills.min.js') }}"></script>
 <script src="{{ asset('assets_fontend/js/main.js') }}"></script>
+

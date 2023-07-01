@@ -210,8 +210,19 @@ ul {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: transparent;
+  color:#075a4d;
+  background-color: white;
 }
+
+/* .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: transparent;
+} */
+
 .header:before {
   content: '';
   position: absolute;
@@ -353,11 +364,11 @@ ul {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
-  color: #fff;
+  color:#000;
   text-transform: uppercase;
 }
 .header__nav a:hover {
-  color: #c2c2c2;
+  color: #000;
 }
 .header__dropdown {
   position: relative;
@@ -559,7 +570,7 @@ ul {
     justify-content: center;
     align-items: center;
     height: 40px;
-    color: #fff;
+    color: black;
     font-size: 16px;
     font-weight: 400;
     text-transform: none;

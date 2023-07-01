@@ -18,6 +18,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[IndexFontEndController::class,'index'])->name('fontend.index');
 
+Route::group(['prefix' => 'inscription','as' => 'inscription.'],function(){
+  Route::get('participant', [AccueilController::class,'participant'])->name('participant');
+
+    Route::post('/generate/badge', [InscriptionController::class, 'storeParticipant'])->name('generate.badge');
+    Route::post('/generate/badge/entreprise', [InscriptionController::class, 'storeEntreprise'])->name('generate.badge.entreprise');
+});
+
 /* Route::get('/', function () {
     $pays = \App\Models\Pays::orderBy('nom','asc')->get();
     $secteuractivites = \App\Models\SecteurActivite::orderBy('libelle','asc')->get();
@@ -28,7 +35,7 @@ Route::get('/',[IndexFontEndController::class,'index'])->name('fontend.index');
     dd($request->all());
 })->name('generate.badge');*/
 
-Route::get('/inscription/participant',[AccueilController::class,'participant'])->name('inscription.participant');
+/* Route::get('/inscription/participant',[AccueilController::class,'participant'])->name('inscription.participant');
 Route::get('/inscription/entreprise',[AccueilController::class,'entreprise'])->name('inscription.entreprise');
 Route::post('/generate/badge',[InscriptionController::class,'storeParticipant'])->name('generate.badge');
 Route::post('/generate/badge/entreprise',[InscriptionController::class,'storeEntreprise'])->name('generate.badge.entreprise');
@@ -38,3 +45,4 @@ Route::get('/generate/imprimer/badge',[InscriptionController::class,'imprimerBad
 Route::get('/generate/imprimer/badge/entreprise',[InscriptionController::class,'imprimerBadgeEntreprise'])->name('generate.imprimer.badge.entreprise');
 Route::get('/send-email/badge', [InscriptionController::class, 'emailbadge'])->name('send-email.badge');
 Route::get('/send-email/badge/entreprise', [InscriptionController::class, 'emailbadgeEntreprise'])->name('send-email.badge.entreprise');
+ */
