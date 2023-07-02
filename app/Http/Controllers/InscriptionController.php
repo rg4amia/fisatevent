@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendMailBadge as JobsSendMailBadge;
 use App\Mail\SendMailBadgeEntreprise;
 use App\Models\Entreprise;
 use App\Models\Participant;
@@ -42,7 +43,8 @@ class InscriptionController extends Controller
             $participant->save();
 
             if($participant){
-                session()->put('participant',$participant);
+                JobsSendMailBadge::dispatch($participant);
+                /* session()->put('participant',$participant);
                 $qr = QrCode::create("https://code-boxx.com");
                 $writer = new PngWriter();
                 $result = $writer->write($qr);
@@ -56,7 +58,7 @@ class InscriptionController extends Controller
                 $content = $pdf->download()->getOriginalContent();
                 Storage::disk('badgepdf')->put('/' . $participant->nom . '_' . str_replace(' ', '_', $participant->prenom) . '.pdf', $content);
 
-                Mail::to($participant->email)->send(new SendMailBadge($participant));
+                Mail::to($participant->email)->send(new SendMailBadge($participant)); */
 
                 $request->session()->flash(' ','VOTRE INSCRIPTION EST VALIDEE ! AFRIKA TRANSTOUR VOUS REMERCIE DE VOTRE INTERET. A BIENTOT AU FISAT 2022 !');
             }
