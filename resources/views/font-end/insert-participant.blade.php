@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <form method="POST" action="{{ route('inscription.generate.badge') }}" class="modal__form">
-                    @csrf
+                   {{ csrf_field }}
                {{-- <form action="#" class="modal__form"> --}}
                 <br>
                 <br>
