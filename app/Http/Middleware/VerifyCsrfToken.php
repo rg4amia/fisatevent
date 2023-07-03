@@ -12,6 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        '/inscription/generate/badge/*'
+        '/inscription/*'
     ];
 }
