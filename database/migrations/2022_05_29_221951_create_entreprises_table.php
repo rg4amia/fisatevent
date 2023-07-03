@@ -13,7 +13,7 @@ class CreateEntreprisesTable extends Migration
      */
     public function up()
     {
-        Schema::create('entreprises', function (Blueprint $table) {
+       /*  Schema::create('entreprises', function (Blueprint $table) {
             $table->id();
             $table->string('nom_entreprise')->nullable();
             $table->string('numero_cnps')->nullable();
@@ -30,7 +30,7 @@ class CreateEntreprisesTable extends Migration
                 ->on('secteur_activites')
                 ->onDelete('cascade');
             $table->timestamps();
-        });
+        }); */
     }
 
     /**

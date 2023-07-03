@@ -13,7 +13,7 @@ class CreateParticipantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('participants', function (Blueprint $table) {
+        /* Schema::create('participants', function (Blueprint $table) {
             $table->id();
             $table->string('nom')->nullable();
             $table->string('prenom')->nullable();
@@ -38,7 +38,7 @@ class CreateParticipantsTable extends Migration
             $table->boolean('sessionspecialeprojet')->default(false);
             $table->boolean('rendezvous')->default(false);
             $table->timestamps();
-        });
+        }); */
     }
 
     /**
